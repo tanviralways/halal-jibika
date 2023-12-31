@@ -1,0 +1,31 @@
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* gap: 302px; */
+}
+/* .banner > div {
+  margin-left: 100px;
+} */
+.banner h1 {
+  font-size: 60px;
+  margin: 20px 0 40px;
+}
+.banner img {
+  width: 700px;
+}
+.banner p {
+  color: gray;
+}
+.banner span {
+  color: #ff6347;
+}
+.banner button {
+  color: #fff;
+  border: 1px solid #6c63ff;
+  padding: 0.7rem 20px;
+  background: #6c63ff;
+  border-radius: 5px;
+  font-size: 17px;
+  font-weight: bold;
+}

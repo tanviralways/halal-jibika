@@ -1,0 +1,22 @@
+.about {
+    font-family: 'Arial', sans-serif;
+  display: flex;
+  flex-direction: column;
+ align-items: center;
+}
+.about img{
+    width: 750px;
+    text-align: center;
+}
+.about h1{
+    text-align: center;
+    font-size: 40px;
+    color: #ff6347;
+}
+.about p{
+    text-align: center;
+    color: gray;
+    margin: 20px 0;
+    font-size: 19px;
+    line-height: 32px;
+}

@@ -1,0 +1,37 @@
+.newslater {
+  text-align: center;
+  margin: 60px 0;
+  background: #6c63ff;
+  color: white;
+  padding: 60px 0 100px;
+}
+
+.newslater p {
+  text-align: center;
+  
+  margin: 20px 0;
+  font-size: 19px;
+  line-height: 28px;
+}
+
+#subscribe input {
+  width: 500px;
+  padding: 20px;
+  border-top: 3px solid #ff6347;
+
+  border-radius: 5px 0px 0px 5px;
+}
+#subscribe button {
+  width: 160px;
+  padding: 18px 0;
+  background: #ff6347;
+  border-radius: 0px 5px 5px 0px;
+  border: 1px solid transparent;
+  font-size: 17px;
+  font-weight: 600;
+}
+#subscribe button:hover {
+  background-color: #fff;
+  color: #ff6347;
+  border: 2px solid #ff6347;
+}

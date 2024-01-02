@@ -1,0 +1,99 @@
+[
+  {
+    "id": 1,
+    "title": "Google Internship Program",
+    "logo": "https://image.cnbcfm.com/api/v1/image/106634080-1595868062406-GettyImages-1207206237.jpg?v=1681299515",
+    "companyName": "Google",
+    "position": "Intern Developer",
+    "description": "This is an internship opportunity from Google"
+  },
+  {
+    "id": 2,
+    "title": "Facebook Junior Development Program",
+    "logo": "https://beebom.com/wp-content/uploads/2021/10/Facebook-Might-Soon-Change-Its-Name-to-Become-a-Parent-Company-feat..jpg?w=750&quality=75",
+    "companyName": "Facebook",
+    "position": "Junior Developer",
+    "description": "This is a junior developer recruitment from Facebook"
+  },
+  {
+    "id": 3,
+    "title": "Microsoft Senior Development Program",
+    "logo": "https://bsmedia.business-standard.com/_media/bs/img/article/2023-06/06/full/1686046036-9475.jpeg?im=FeatureCrop,size=(826,465)",
+    "companyName": "Microsoft",
+    "position": "Senior Developer",
+    "description": "This is a junior developer recruitment from Microsoft"
+  },
+  {
+    "id": 4,
+    "title": "Amazon Software Engineer Internship",
+    "logo": "https://etimg.etb2bimg.com/photo/95718091.cms",
+    "companyName": "Amazon",
+    "position": "Software Engineer Intern",
+    "description": "Exciting internship opportunity at Amazon for software engineering enthusiasts."
+  },
+  {
+    "id": 5,
+    "title": "Apple Mobile App Developer",
+    "logo": "https://res.cloudinary.com/people-matters/image/upload/q_auto,f_auto/v1660621842/1660621841.jpg",
+    "companyName": "Apple",
+    "position": "Mobile App Developer",
+    "description": "Join Apple's dynamic team as a mobile app developer and contribute to cutting-edge projects."
+  },
+  {
+    "id": 6,
+    "title": "Netflix Data Science Internship",
+    "logo": "https://i.pcmag.com/imagery/reviews/05cItXL96l4LE9n02WfDR0h-5.fit_scale.size_760x427.v1582751026.png",
+    "companyName": "Netflix",
+    "position": "Data Science Intern",
+    "description": "Explore the world of data science with this exciting internship opportunity at Netflix."
+  },
+
+  {
+    "id": 7,
+    "title": "Twitter Frontend Developer ",
+    "logo": "https://images.livemint.com/img/2022/11/01/1600x900/Twitter_top_investors_1667287179805_1667287180007_1667287180007.jpg",
+    "companyName": "Twitter",
+    "position": "Frontend Developer",
+    "description": "Exciting opportunity to join Twitter's frontend development team and work on innovative projects."
+  },
+  {
+    "id": 8,
+    "title": "Uber UX/UI Design Internship",
+    "logo": "https://media.gannett-cdn.com/29906170001/29906170001_5997364728001_5997367399001-vs.jpg?pubId=29906170001",
+    "companyName": "Uber",
+    "position": "UX/UI Design Intern",
+    "description": "Join Uber's design team as an intern and contribute to creating a seamless user experience."
+  },
+  {
+    "id": 9,
+    "title": "LinkedIn Software Architect Role",
+    "logo": "https://www.investopedia.com/thmb/QEW4fROKwJlOuoVqg5_7cOZV7eM=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-597436070-5643f3df638c41c89ae265441183ea86.jpg",
+    "companyName": "LinkedIn",
+    "position": "Software Architect",
+    "description": "Exciting role for a software architect at LinkedIn to contribute to the architecture of cutting-edge software systems."
+  },
+  {
+    "id": 10,
+    "title": "Airbnb Full Stack Developer position",
+    "logo": "https://www.theforage.com/blog/wp-content/uploads/2023/01/working-at-airbnb-1024x768.jpg",
+    "companyName": "Airbnb",
+    "position": "Full Stack Developer",
+    "description": "Join Airbnb's development team as a full stack developer and contribute to building the future of travel accommodation."
+  },
+  {
+    "id": 11,
+    "title": "Snapchat Product Manager Internship",
+    "logo": "https://cdn.geekwire.com/wp-content/uploads/2017/08/33211349545_f13fbc1ce2_k.jpg",
+    "companyName": "Snapchat",
+    "position": "Product Manager Intern",
+    "description": "Exciting internship opportunity for aspiring product managers at Snapchat to work on innovative products and features."
+  },
+  {
+    "id": 12,
+    "title": "Adobe Creative Cloud Software Engineer",
+    "logo": "https://media.bizj.us/view/img/12346633/adobe-north-tower-333-west-san-fernando-st-0002*900xx2877-1621-875-431.jpg",
+    "companyName": "Adobe",
+    "position": "Creative Cloud Software Engineer",
+    "description": "Join Adobe's software engineering team and contribute to the development of creative cloud applications."
+  }
+]

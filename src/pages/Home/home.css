@@ -16,11 +16,12 @@
 }
 .banner p {
   color: gray;
+  font-size: 18px;
 }
 .banner span {
   color: #ff6347;
 }
-.banner button {
+.banner button  {
   color: #fff;
   border: 1px solid #6c63ff;
   padding: 0.7rem 20px;
@@ -28,4 +29,23 @@
   border-radius: 5px;
   font-size: 17px;
   font-weight: bold;
+  cursor: pointer;
+  width: 150px;
 }
+
+.banner button:hover  {
+  color: #6c63ff;
+  background: #fff;
+  text-decoration: none !important;
+}
+@media (max-width: 600px) {
+    .banner {
+     flex-direction: column;
+    }
+  }
+  /* .container */
+  #explore-all-job{
+   
+    
+    color: #fff;
+  }

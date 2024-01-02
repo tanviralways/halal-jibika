@@ -1,0 +1,13 @@
+.container{
+   
+        font-family: 'Arial', sans-serif;
+        background-color: #f4f4f4;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 70px;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+        padding: 20px;
+}

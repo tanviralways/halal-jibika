@@ -43,7 +43,7 @@
 .job-card-btn {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  /* align-items: center !important; */
   padding: 35px 15px;
 }
 #details-btn {

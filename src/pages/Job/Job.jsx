@@ -2,6 +2,7 @@ import "./job.css";
 import { FaEdit } from "react-icons/fa";
 import { MdDelete } from "react-icons/md";
 import { FaRegHeart  } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Job = ({ job }) => {
   const { id, companyName, description, position, title, logo } = job;
@@ -22,7 +23,7 @@ const Job = ({ job }) => {
 
         <MdDelete color="red" fontSize="1.9em" cursor="pointer" />
 
-        <button id="details-btn">Details</button>
+        <button  id="details-btn"> <Link to={`/job/${id}`}>Details</Link> </button>
       </div>
     </div>
   );

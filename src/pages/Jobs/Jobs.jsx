@@ -1,8 +1,8 @@
 import { useLoaderData } from "react-router";
 import Job from "../Job/Job";
 import "./jobs.css";
-import { useState } from "react";
-import { Audio } from "react-loader-spinner";
+//import { useState } from "react";
+//import { Audio } from "react-loader-spinner";
 
 const Jobs = () => {
   // const [loader, setLoader] = useState(true);

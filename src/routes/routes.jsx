@@ -9,6 +9,7 @@ import Signup from "../pages/Signup/Signup";
 import Signin from "../pages/Signin/Signin";
 import NotFound from "../NotFound/NotFound";
 import SignOut from "../pages/SignOut/SignOut";
+import JobDetails from "../pages/JobDetails/JobDetails";
 
 const router = createBrowserRouter([
   {
@@ -27,6 +28,13 @@ const router = createBrowserRouter([
         element: <Jobs />,
         loader: () => {
           return fetch("../../data.json");
+        },
+      },
+      {
+        path: "job/:id",
+        element: <JobDetails />,
+        loader: ({ paramsa }) => {
+          console.log(params);
         },
       },
       {

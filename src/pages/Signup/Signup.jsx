@@ -3,10 +3,24 @@ import { FaGithub } from "react-icons/fa";
 
 import "./signup.css";
 import { Link, useNavigate } from "react-router-dom";
-// import { useState } from "react";
+import { useState } from "react";
+import {
+  GithubAuthProvider,
+  GoogleAuthProvider,
+  createUserWithEmailAndPassword,
+  getAuth,
+  signInWithPopup,
+} from "firebase/auth";
+
+import app from "../../firebase/firebase.config";
+import Header from "../../Layout/Header/Header";
+const auth = getAuth(app);
+const googleProvider = new GoogleAuthProvider();
+const githubProvider = new GithubAuthProvider();
+
 const Signup = () => {
-  // const [error, setError] = useState("");
-  // const [success, setSuccess] = useState("");
+  const [error, setError] = useState("");
+  const [success, setSuccess] = useState("");
   const navigate = useNavigate();
   const backToHome = () => {
     navigate("/");
@@ -20,14 +34,47 @@ const Signup = () => {
     const password = form.password.value;
     const confirmPassword = form.confirmPassword.value;
     console.log(nameOfUser, email, password, confirmPassword);
-    // if (/(?=.*[A-Z].*[A-Z])/.test(password)) {
-    //   setError("Password must be at least 8 characters long");
-    //   return;
-    // }
+    if (password !== confirmPassword) {
+     return setError("Password dosn't match");
+    }
 
-    // setError("");
+    //create user
+    createUserWithEmailAndPassword(auth, email, password)
+      .then((result) => {
+        const loggedUser = result.user;
+        console.log(loggedUser);
+        setError("");
+        e.target.reset();
+        setSuccess("successfully log in");
+      })
+      .catch((error) => {
+        setError(error.message);
+      });
   };
 
+  const handleGoogleSignIn = () => {
+    signInWithPopup(auth, googleProvider)
+      .then((result) => {
+        const user = result.user;
+        console.log(user); 
+        <Header user={user}/>
+      })
+      .catch((error) => {
+        const errorMessage = error.message;
+        console.log(errorMessage);
+      });
+  };
+  const handleGithubSignIn = () => {
+    signInWithPopup(auth, githubProvider)
+      .then((result) => {
+        const user = result.user;
+        console.log(user);
+      })
+      .catch((error) => {
+        const errorMessage = error.message;
+        console.log(errorMessage);
+      });
+  };
   return (
     <div className="signup">
       <div className="signup-card">
@@ -37,6 +84,7 @@ const Signup = () => {
         <div className="signup-card-body">
           <form onSubmit={handleSubmit}>
             <div className="form-group">
+              <h4>{success}</h4>
               <label htmlFor="username">Full Name</label>
               <input
                 type="text"
@@ -55,6 +103,7 @@ const Signup = () => {
                 placeholder="Enter your email"
                 required
               />
+              {error}
             </div>
             <div className="form-group">
               <label htmlFor="password">Password</label>
@@ -65,7 +114,6 @@ const Signup = () => {
                 placeholder="Enter your password"
                 required
               />
-            
             </div>
             <div className="form-group">
               <label htmlFor="confirmPassword">Confirm Password</label>
@@ -75,14 +123,19 @@ const Signup = () => {
                 id="confirmPassword"
                 placeholder="Confirm your password"
               />
-             
             </div>
             <button type="submit">Sign Up</button>
-            <button className="google" type="submit">
+            <button
+              onClick={handleGoogleSignIn}
+              className="google"
+              type="submit">
               <FaGoogle />
               <span> Google</span>
             </button>
-            <button className="github" type="submit">
+            <button
+              onClick={handleGithubSignIn}
+              className="github"
+              type="submit">
               <FaGithub />
               <span> Github</span>
             </button>

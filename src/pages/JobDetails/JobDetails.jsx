@@ -1,5 +1,5 @@
 const JobDetails = () => {
-  return <div></div>;
+  return <div>ghkhj</div>;
 };
 
 export default JobDetails;

@@ -4,6 +4,9 @@
   align-items: center;
   background-color: #6c63ff;
   padding: 10px 30px;
+} nav{
+  position: sticky;
+  top: 0;
 }
 nav a {
   text-decoration: none;

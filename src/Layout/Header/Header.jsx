@@ -6,7 +6,8 @@ import "./header.css";
 import logo from "../../assets/Screenshot_2023-12-31_101929-removebg-preview.png";
 import { useState } from "react";
 
-const Header = () => {
+const Header = ({user}) => {
+  console.log(user);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
     <nav>
@@ -44,6 +45,7 @@ const Header = () => {
               <NavLink to="/favourite"> Favourite</NavLink>
               <NavLink to=""> Signup</NavLink>
               <NavLink to=""> Signout</NavLink>
+              <NavLink> <p>{user.email}</p></NavLink>
             </div>
           </div>
         )}

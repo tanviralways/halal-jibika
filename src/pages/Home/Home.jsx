@@ -47,7 +47,7 @@ const Home = () => {
                 <button id="apply-btn">Apply now</button>
                 <FaEdit color="#6c63ff" fontSize="1.8em" cursor="pointer" />
                 <FaRegHeart background="#FF1493" fontSize="1.8rem" />
-                <MdDelete color="red" fontSize="1.9em" cursor="pointer" />
+                <MdDelete color="red" fontSize="1.9em" cursor="pointer" />  
                 <button id="details-btn">Details</button>
               </div>
             </div>

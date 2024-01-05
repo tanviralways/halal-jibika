@@ -33,9 +33,7 @@ const router = createBrowserRouter([
       {
         path: "job/:id",
         element: <JobDetails />,
-        loader: ({ paramsa }) => {
-          console.log(params);
-        },
+        loader: ({ params }) => console.log(params.id),
       },
       {
         path: "/about",

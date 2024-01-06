@@ -31,28 +31,29 @@ const Home = () => {
       </div>
 
       <div className="container">
-        {firstThreeJobs.map((job) => {
-          const { id, companyName, description, position, title, logo } = job;
+        {firstThreeJobs &&
+          firstThreeJobs.map((job) => {
+            const { id, companyName, description, position, title, logo } = job;
 
-          return (
-            <div key={id} className="job-card">
-              <img src={logo} alt="Company Logo" />
-              <div className="job-card-content">
-                <div className="job-card-title">{title}</div>
-                <div className="job-card-company">{companyName}</div>
-                <div className="job-card-position">{position}</div>
-                <div className="job-card-description">{description}</div>
+            return (
+              <div key={id} className="job-card">
+                <img src={logo} alt="Company Logo" />
+                <div className="job-card-content">
+                  <div className="job-card-title">{title}</div>
+                  <div className="job-card-company">{companyName}</div>
+                  <div className="job-card-position">{position}</div>
+                  <div className="job-card-description">{description}</div>
+                </div>
+                <div className="job-card-btn">
+                  <button id="apply-btn">Apply now</button>
+                  <FaEdit color="#6c63ff" fontSize="1.8em" cursor="pointer" />
+                  <FaRegHeart background="#FF1493" fontSize="1.8rem" />
+                  <MdDelete color="red" fontSize="1.9em" cursor="pointer" />
+                  <button id="details-btn">Details</button>
+                </div>
               </div>
-              <div className="job-card-btn">
-                <button id="apply-btn">Apply now</button>
-                <FaEdit color="#6c63ff" fontSize="1.8em" cursor="pointer" />
-                <FaRegHeart background="#FF1493" fontSize="1.8rem" />
-                <MdDelete color="red" fontSize="1.9em" cursor="pointer" />  
-                <button id="details-btn">Details</button>
-              </div>
-            </div>
-          );
-        })}
+            );
+          })}
       </div>
       <Link id="explore-all-job" to="/jobs">
         <button>Explore All Jobs</button>

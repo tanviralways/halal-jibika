@@ -13,7 +13,7 @@ import {
 } from "firebase/auth";
 
 import app from "../../firebase/firebase.config";
-import Header from "../../Layout/Header/Header";
+//import Header from "../../Layout/Header/Header";
 const auth = getAuth(app);
 const googleProvider = new GoogleAuthProvider();
 const githubProvider = new GithubAuthProvider();
@@ -35,7 +35,7 @@ const Signup = () => {
     const confirmPassword = form.confirmPassword.value;
     console.log(nameOfUser, email, password, confirmPassword);
     if (password !== confirmPassword) {
-     return setError("Password dosn't match");
+      return setError("Password dosn't match");
     }
 
     //create user
@@ -56,8 +56,8 @@ const Signup = () => {
     signInWithPopup(auth, googleProvider)
       .then((result) => {
         const user = result.user;
-        console.log(user); 
-        <Header user={user}/>
+        console.log(user);
+        // <Header user={user}/>
       })
       .catch((error) => {
         const errorMessage = error.message;

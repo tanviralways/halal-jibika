@@ -6,9 +6,7 @@ import "./header.css";
 import logo from "../../assets/Screenshot_2023-12-31_101929-removebg-preview.png";
 import { useState } from "react";
 
-const Header = ({ user }) => {
-  console.log(user);
-
+const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
     <nav>
